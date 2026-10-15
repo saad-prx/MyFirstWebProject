@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Continental Hotel Reservation Form</title>
+
+<style>
+  body {
+    background-color: #e0e0e0;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+  }
+
+  h1 {
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 0 14px 0;
+  }
+
+  table {
+    width: 437px;
+    margin: 0 auto;
+    border: 2px solid #999;
+    border-collapse: separate;
+    border-spacing: 3px;
+    background-color: #c9e4ff;
+  }
+
+  td {
+    background-color: #c9e4ff;
+    border: 1px solid #888;
+    padding: 5px 4px;
+  }
+
+  td.label {
+    width: 32%;
+    text-align: right;
+    font-weight: bold;
+    padding-right: 8px;
+  }
+
+  td.submit-row {
+    text-align: center;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    width: 195px;
+    border: 1px solid #aaa;
+    padding: 2px 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+  }
+
+  input.time {
+    width: 134px;
+  }
+
+  input.half {
+    width: 130px;
+  }
+
+  td.nowrap {
+    white-space: nowrap;
+  }
+
+  td.label.small {
+    font-size: 15px;
+  }
+</style>
+</head>
+
+<body>
+
+<h1>Continental Hotel Reservation Form</h1>
+
+<form action="#" method="post">
+  <table>
+    <tr>
+      <td class="label"><label for="name">Name</label></td>
+      <td><input type="text" id="name" name="name" placeholder="Enter your name"></td>
+    </tr>
+
+    <tr>
+      <td class="label"><label for="email">eMail</label></td>
+      <td><input type="email" id="email" name="email" value="info@continental.pk"></td>
+    </tr>
+
+    <tr>
+      <td class="label"><label for="mobile">Mobile No</label></td>
+      <td><input type="text" id="mobile" name="mobile" placeholder="Enter your cell number"></td>
+    </tr>
+
+    <tr>
+      <td class="label"><label for="arrival">Arrival Time</label></td>
+      <td><input type="text" class="time" id="arrival" name="arrival" placeholder="Enter your arrival time"></td>
+    </tr>
+
+    <tr>
+      <td class="label"><label for="departure">Departure</label></td>
+      <td class="nowrap">
+        <input type="text" class="half" id="departure" name="departure_date">
+        <input type="text" class="half" name="departure_time">
+      </td>
+    </tr>
+
+    <tr>
+      <td class="label">Room Type</td>
+      <td>
+        <input type="radio" id="single" name="room" value="single"><label for="single">Single</label>
+        <input type="radio" id="double" name="room" value="double"><label for="double">Double</label><br>
+        <input type="radio" id="suite" name="room" value="suite"><label for="suite">Presidential Suite</label>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="label">Preferences</td>
+      <td>
+        <input type="checkbox" id="nosmoke" name="pref" value="nonsmoking"><label for="nosmoke">Non-Smoking</label><br>
+        <input type="checkbox" id="internet" name="pref" value="internet"><label for="internet">Internet</label><br>
+        <input type="checkbox" id="mattress" name="pref" value="mattress"><label for="mattress">Firm Mattress</label>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="label small">Mode of Payment</td>
+      <td>
+        <input type="checkbox" id="cash" name="pay" value="cash"><label for="cash">Cash</label>
+        <input type="checkbox" id="check" name="pay" value="check"><label for="check">Check</label><br>
+        <input type="checkbox" id="card" name="pay" value="card"><label for="card">Credit Card</label>
+        <select name="cardtype">
+          <option>Select Card</option>
+          <option>Visa</option>
+          <option>MasterCard</option>
+          <option>American Express</option>
+        </select>
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="2" class="submit-row"><input type="submit" value="Send Data"></td>
+    </tr>
+  </table>
+</form>
+
+</body>
+</html>

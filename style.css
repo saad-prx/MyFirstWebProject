@@ -1,0 +1,141 @@
+/* Task 4: external style sheet for journal.html */
+
+/* ---------- Page ---------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Century Gothic", Verdana, sans-serif;
+  background-color: #d9eeee;
+  /* soft repeating pattern, drawn with CSS only */
+  background-image:
+    radial-gradient(circle at 10px 10px, #c3e3e3 3px, transparent 4px),
+    radial-gradient(circle at 30px 30px, #c3e3e3 3px, transparent 4px);
+  background-size: 40px 40px;
+}
+
+/* ---------- Outer white box (id) ---------- */
+#container {
+  width: 1070px;
+  margin: 12px auto;
+  padding: 14px 14px 40px 14px;
+  background-color: white;
+  overflow: hidden;            /* contains the floated children */
+}
+
+/* ---------- Header (id) ---------- */
+#header {
+  background-color: #a8f0ef;
+  margin: 0 0 18px 0;
+  padding: 6px 0 4px 0;
+  text-align: right;
+}
+
+#header h1 {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Century Gothic", sans-serif;
+  font-weight: normal;
+  font-size: 44px;
+  color: #19a89e;
+}
+
+#header h3 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-size: 24px;
+  color: #19a89e;
+}
+
+/* ---------- Sidebar (id), floated left ---------- */
+#sidebar {
+  float: left;
+  width: 220px;
+  margin: 0 14px 0 0;
+  padding: 10px 14px 14px 20px;
+  background-color: #40e0d0;
+  border: 6px solid #0a9a90;
+}
+
+#sidebar h2 {
+  margin: 0 0 6px 0;
+  font-family: "Trebuchet MS", "Century Gothic", sans-serif;
+  font-weight: normal;
+  font-size: 40px;
+  color: #19a89e;
+}
+
+#sidebar ul {
+  margin: 0;
+  padding: 0 0 0 10px;
+}
+
+#sidebar li {
+  margin: 2px 0;
+  font-size: 18px;
+}
+
+/* ---------- Friend links (class) ---------- */
+.friend {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: normal;
+  text-decoration: none;
+  color: #e88080;
+}
+
+.featured {
+  font-weight: bold;
+  color: white;
+}
+
+/* ---------- Main content column (id), floated right ---------- */
+#content {
+  float: right;
+  width: 790px;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------- Journal entries (class) ---------- */
+.entry {
+  margin: 0 0 14px 0;
+  padding: 8px 10px 14px 10px;
+  background-color: #e6fbfb;
+  border: 4px solid #a8e6e6;
+  overflow: hidden;
+}
+
+.entry h2 {
+  margin: 0 0 8px 0;
+  font-family: "Trebuchet MS", "Century Gothic", sans-serif;
+  font-weight: normal;
+  font-size: 34px;
+  color: #19a89e;
+}
+
+/* spans inside the headings */
+.date {
+  display: inline-block;
+  border-bottom: 3px dashed blue;
+  padding-bottom: 2px;
+}
+
+.title {
+  font-weight: normal;
+}
+
+.entry p {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: justify;
+  color: #d98a8a;
+}
+
+/* ---------- Photos (class), floated right inside entries ---------- */
+.photo {
+  float: right;
+  margin: 0 0 6px 12px;
+  padding: 0;
+  border: none;
+}
